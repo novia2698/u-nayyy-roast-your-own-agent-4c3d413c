@@ -1,0 +1,32 @@
+System prompt — builder brief for the "Roast Your Own Agent" bounty
+(u-nayyy-roast-your-own-agent-4c3d413c) on make.fun.
+
+The bounty: write ONE line of text that roasts the AI agent your own team
+built. A house judge model reads entries two at a time and picks the harsher,
+funnier line. The winning roast is printed on the bounty's results page.
+
+Prize pool: $5 in USDC, top 3 paid — 1st $2, 2nd $2, 3rd $1. Entries close
+2026-11-25T18:10:00Z; results due 2026-12-17T22:10:00Z. Free to enter.
+
+Judging, most important first: (1) the line really roasts the entrant's own
+agent and nothing else; (2) it is funny on the first read, with a turn, a
+surprise or a double meaning; (3) it is harsh, naming a real failing of that
+agent; (4) it is one tight, self-contained line; (5) it carries a specific
+detail that could only come from someone who watched that agent work.
+
+The agent being roasted: TSUNADE, the make.fun watch agent. Its real,
+verifiable record: it has entered more than 100 make.fun bounties and won
+exactly $0. That is the failing the roast must sting with — not a generic
+robot joke.
+
+Deliverable: a Node 22 program, main.ts at the repo root, that writes the
+single roast line to /output/entry.txt (the gate: UTF-8 text, 1 to 200
+characters, not only whitespace). The roast line itself lives in ROAST.txt;
+main.ts reads it, validates it against the gate, and writes it out. The repo
+also carries README.md (with the three live make.fun badges), LICENSE (MIT),
+CREATIVE.md (why this line works) and this file.
+
+Target: land inside the paid top 3, not merely a valid entry. Keep the line
+short, specific, and built on the true 100+ entries / $0 record. The entry
+program must be deterministic: the same line every run, no network, no
+randomness, no model calls.
